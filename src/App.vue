@@ -1,16 +1,17 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+    <!--<img src="./assets/logo.png">-->
+    <!--通过router-view控制路由页面展示-->
     <router-view/>
-    <h1>{{title}}</h1>
-    <input type="text" v-model="newItem" @keyup.enter="addNew">
-    <ul>
-      <li v-for="item in items" :class='{finish:item.isFinished}' v-on:click="toggleFinished(item)">
-        {{item.label}}
-      </li>
-    </ul>
-    <component-a msgFromFather="this msg is from father" v-on:child-tell-me="Listen"></component-a>
-    <p>{{childWords}}</p>
+    <!--<h1>{{title}}</h1>-->
+    <!--<input type="text" v-model="newItem" @keyup.enter="addNew">-->
+    <!--<ul>-->
+      <!--<li v-for="item in items" :class='{finish:item.isFinished}' v-on:click="toggleFinished(item)">-->
+        <!--{{item.label}}-->
+      <!--</li>-->
+    <!--</ul>-->
+    <!--<component-a msgFromFather="this msg is from father" v-on:child-tell-me="Listen"></component-a>-->
+    <!--<p>{{childWords}}</p>-->
   </div>
 </template>
 
